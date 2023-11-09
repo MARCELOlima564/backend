@@ -11,9 +11,10 @@ app.use(express.json());//Permite que o servidor entenda requicições do JSON
 app.get("/", (req, res) =>{
     // Rota inicial
     res.status(200).json({message: "Hello, world!"});
+});
 
     app.listen(port, () =>{
         //Inicia o servidor
         console.log(`Server started on http://localhost:${port}`);
-    });
+    
 })
