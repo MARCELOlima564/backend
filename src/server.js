@@ -10,7 +10,20 @@ app.use(express.json());//Permite que o servidor entenda requicições do JSON
 
 app.get("/", (req, res) =>{
     // Rota inicial
-    res.status(200).json({message: "Hello, world!"});
+    res.status(200).json({message: "Hello, GET!"});
+});
+
+app.post("/", (req, res) =>{
+    // Rota inicial
+    res.status(200).json({message: "Hello, POST!"});
+});
+app.delete("/", (req, res) =>{
+    // Rota inicial
+    res.status(200).json({message: "Hello, DELETE!"});
+});
+app.put("/", (req, res) =>{
+    // Rota inicial
+    res.status(200).json({message: "Hello, PUT!"});
 });
 
     app.listen(port, () =>{
